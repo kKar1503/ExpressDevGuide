@@ -1,5 +1,7 @@
-const HelloUser = (name) => {
-	console.log("Hello " + name);
-};
+const fs = require('fs');
 
-module.exports = { HelloUser };
+fs.readFile('TextFile.txt', 'utf8', (err, data) => {
+	console.log('File data is', data);
+});
+
+console.log('TEST');
